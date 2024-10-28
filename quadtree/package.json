@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "start": "node server.js",
+    "dev:server": "nodemon server.js",
+    "dev:webpack": "webpack --watch",
+    "dev:browser-sync": "node browser-sync.cjs",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:webpack\" \"npm run dev:browser-sync\""
+  },
+  "type": "module",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "path": "^0.12.7",
+    "sass": "^1.80.4",
+    "url": "^0.11.4"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.1.5",
+    "@types/express": "^5.0.0",
+    "browser-sync": "^3.0.3",
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.7",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
